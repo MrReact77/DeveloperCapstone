@@ -1,0 +1,31 @@
+nav{
+    margin-top: 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+img{
+    top: 0.4rem;
+}
+
+div a {
+    padding: 1rem;
+}
+
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-top: 0.8rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
