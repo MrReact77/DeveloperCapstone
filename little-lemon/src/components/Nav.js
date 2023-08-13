@@ -4,8 +4,7 @@ import logo from '../assets/Logo.svg';
 
 export default function Nav() {
   return (
-    <>
-      <nav>
+    <nav>
             <img src={logo} alt="logo"/>
             <ul>
                 <li><a href="/home">Home</a></li>
@@ -18,7 +17,6 @@ export default function Nav() {
           <a href="/login">Login</a>
           <a href="/signup">Sign up</a>
         </div>
-      </nav>
-    </>
+    </nav>
   )
 }

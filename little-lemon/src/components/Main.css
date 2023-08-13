@@ -1,0 +1,20 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, minmax(min-content, auto));
+}
+
+.SpecialsSection{
+    grid-column: 1 / 13;
+    grid-row: 1 / 2;
+}
+
+.TestimonialsSection{
+    grid-column: 1 / 13;
+    grid-row: 2 / 3;
+}
+
+.AboutSection{
+    grid-column: 1 / 13;
+    grid-row: 3 / 4;
+}

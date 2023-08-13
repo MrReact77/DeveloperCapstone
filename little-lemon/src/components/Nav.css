@@ -1,15 +1,17 @@
 nav{
-    margin-top: 1rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
     display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     justify-content: space-around;
     align-items: center;
-    position: relative;
+    width: 100%;
+    padding-left: 28rem;
+    padding-right: 28rem;
 }
 
+
 img{
-    top: 0.4rem;
+      margin: 0.4rem 0;
 }
 
 div a {
@@ -19,13 +21,25 @@ div a {
 
 ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
-    margin-top: 0.8rem;
+    color: #000;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: #000;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
 }
