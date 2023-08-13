@@ -107,8 +107,10 @@ main{
 
 .specialsContentWrapper > article > section > div:first-child {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 1rem;
+    padding-left: 1.8rem;
+    padding-right: 1rem;
 }
 
 .specialsContentWrapper > article > section{
