@@ -11,7 +11,7 @@ export default function Header() {
             <p>
               We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
             </p>
-            <button className="reserveTableButton">Resvere a table</button>
+            <button className="reserveTableButton">Reserve a table</button>
       </article>
       <div className="imageWrapper">
         <img src={restaurantfood} className="mediterranianSeaFoodPic" alt="Presentation of mediterrainian Sea food on a plate"></img>

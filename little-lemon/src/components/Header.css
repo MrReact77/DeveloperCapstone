@@ -14,6 +14,7 @@ header{
 }
 
 .headerArticle h1{
+    padding-top: 2rem;
     width: 18rem;
     color: #F4CE14;
     font-family: 'Markazi Text', sans-serif;
@@ -70,9 +71,9 @@ header{
 
 .mediterranianSeaFoodPic{
     position: absolute;
-    width: 20.0625rem;
+    width: 18rem;
     height: 22.375rem;
-    top: 1.3rem;
+    top: 2rem;
     flex-shrink: 0;
     border-radius: 1rem;
     background: lightgray 50% / cover no-repeat;

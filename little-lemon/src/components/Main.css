@@ -2,6 +2,8 @@ main{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, minmax(min-content, auto));
+    padding-left: 20rem;
+    padding-right: 20rem;
 }
 
 .SpecialsSection{
@@ -17,4 +19,122 @@ main{
 .AboutSection{
     grid-column: 1 / 13;
     grid-row: 3 / 4;
+}
+
+.specialsHeadingWrapper{
+    display:flex;
+    justify-content: space-around;
+}
+
+.specialsHeadline{
+    color: #000;
+    font-family: 'Markazi Text', sans-serif;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 4rem;
+}
+
+.orderMenuOnlineButton{
+    width: 10.5rem;
+    height: 2.9375rem;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: 'Markazi Text', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 5.2rem;
+    margin-right: 3rem;
+    background-color: #F4CE14;
+    cursor: pointer;
+}
+
+.specialsContentWrapper{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    padding-left: 10rem;
+    padding-right: 13rem;
+}
+
+.specialsContentWrapper > article > img:first-child {
+    display: block;
+    width: 16.498rem;
+    height: 11rem;
+    flex-shrink: 0;
+    border-radius: 1rem 1rem 0rem 0rem;
+    margin-bottom: 0;
+}
+
+.specialsContentWrapper article h3{
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    whitespace: nowrap;
+    font-family: 'Markazi Text', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%;
+}
+
+.specialsContentWrapper article h4{
+    color: #EE9972;
+    font-family: 'Karla';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.specialsContentWrapper p{
+    width: 13.546rem;
+    height: 7.51788rem;
+    flex-shrink: 0;
+    color: #495E57;
+    font-family: 'Karla';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 1.8rem;
+    margin-top: 1rem;
+}
+
+.specialsContentWrapper > article > section > div:first-child {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+
+.specialsContentWrapper > article > section{
+    background-color: #EDEFEE;
+    width: 16.54169rem;
+    height: 15rem;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.specialsContentWrapper > article > section > div > p{
+    color: #333;
+    font-family: 'Karla';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.orderDelivery{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.orderDelivery img{
+    position: absolute;
+    top: 0.5rem;
+    left: 13rem;
 }
