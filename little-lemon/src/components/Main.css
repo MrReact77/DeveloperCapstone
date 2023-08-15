@@ -1,142 +1,155 @@
-main{
+/* Default (Mobile) */
+main {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* Start with 4 columns on mobile */
     grid-template-rows: repeat(3, minmax(min-content, auto));
-    padding-left: 20rem;
-    padding-right: 20rem;
+    gap: 16px;
 }
 
-.SpecialsSection{
-    grid-column: 1 / 13;
+.SpecialsSectionGrid, .TestimonialsSectionGrid, .AboutSectionGrid {
+    grid-column: 1 / 5; /* Span all 4 columns on mobile */
+}
+
+.SpecialsSectionGrid {
     grid-row: 1 / 2;
 }
 
-.TestimonialsSection{
-    grid-column: 1 / 13;
+.TestimonialsSectionGrid {
     grid-row: 2 / 3;
+    background-color: #D9D9D9;
 }
 
-.AboutSection{
-    grid-column: 1 / 13;
+.AboutSectionGrid {
     grid-row: 3 / 4;
 }
 
-.specialsHeadingWrapper{
-    display:flex;
-    justify-content: space-around;
+/* Tablet screen */
+@media screen and (min-width: 768px) {
+    main {
+        grid-template-columns: repeat(8, 1fr);
+        gap: 24px;
+    }
+
+    .SpecialsSectionGrid, .TestimonialsSectionGrid, .AboutSectionGrid {
+        grid-column: 1 / 9; /* Span all 8 columns on tablet */
+    }
 }
 
-.specialsHeadline{
-    color: #000;
-    font-family: 'Markazi Text', sans-serif;
-    font-size: 4rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-top: 4rem;
+/* Desktop screen */
+@media screen and (min-width: 1024px) {
+    main {
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px;
+    }
+    .SpecialsSectionGrid, .TestimonialsSectionGrid, .AboutSectionGrid {
+        grid-column: 1 / 13; /* Span all 12 columns on desktop */
+    }
 }
 
-.orderMenuOnlineButton{
-    width: 10.5rem;
-    height: 2.9375rem;
-    flex-shrink: 0;
-    color: #000;
-    text-align: center;
-    font-family: 'Markazi Text', sans-serif;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 5.2rem;
-    margin-right: 3rem;
-    background-color: #F4CE14;
-    cursor: pointer;
+.SpecialsSectionGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Start with 4 columns on mobile */
+    grid-template-rows: repeat(1, minmax(min-content, auto));
+    gap: 16px;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
-.specialsContentWrapper{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 3rem;
-    padding-left: 10rem;
-    padding-right: 13rem;
+.SpecialsSection{
+    grid-column: 1 / 5;
 }
 
-.specialsContentWrapper > article > img:first-child {
-    display: block;
-    width: 16.498rem;
-    height: 11rem;
-    flex-shrink: 0;
-    border-radius: 1rem 1rem 0rem 0rem;
-    margin-bottom: 0;
+@media screen and (min-width: 768px) {
+    .SpecialsSectionGrid {
+        grid-template-columns: repeat(8, 1fr);
+        gap: 24px;
+    }
+
+    .SpecialsSection {
+        grid-column: 2 / 8;
+    }
 }
 
-.specialsContentWrapper article h3{
-    overflow: hidden;
-    color: #000;
-    text-overflow: ellipsis;
-    whitespace: nowrap;
-    font-family: 'Markazi Text', sans-serif;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 90%;
+/* Desktop screen */
+@media screen and (min-width: 1024px) {
+    .SpecialsSectionGrid {
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px;
+    }
+    .SpecialsSection {
+        grid-column: 3 / 11;
+    }
 }
 
-.specialsContentWrapper article h4{
-    color: #EE9972;
-    font-family: 'Karla';
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.TestimonialsSectionGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Start with 4 columns on mobile */
+    grid-template-rows: repeat(1, minmax(min-content, auto));
+    gap: 16px;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
-.specialsContentWrapper p{
-    width: 13.546rem;
-    height: 7.51788rem;
-    flex-shrink: 0;
-    color: #495E57;
-    font-family: 'Karla';
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-left: 1.8rem;
-    margin-top: 1rem;
+.TestimonialsSection{
+    grid-column: 1 / 5;
 }
 
-.specialsContentWrapper > article > section > div:first-child {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 1rem;
-    padding-left: 1.8rem;
-    padding-right: 1rem;
+@media screen and (min-width: 768px) {
+    .TestimonialsSectionGrid {
+        grid-template-columns: repeat(8, 1fr);
+        gap: 24px;
+    }
+
+    .TestimonialsSection {
+        grid-column: 2 / 8;
+    }
 }
 
-.specialsContentWrapper > article > section{
-    background-color: #EDEFEE;
-    width: 16.54169rem;
-    height: 15rem;
-    flex-shrink: 0;
-    position: relative;
+/* Desktop screen */
+@media screen and (min-width: 1024px) {
+    .TestimonialsSectionGrid{
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px;
+    }
+    .TestimonialsSection {
+        grid-column: 3 / 11;
+    }
 }
 
-.specialsContentWrapper > article > section > div > p{
-    color: #333;
-    font-family: 'Karla';
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-.orderDelivery{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+.AboutSectionGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Start with 4 columns on mobile */
+    grid-template-rows: repeat(1, minmax(min-content, auto));
+    gap: 16px;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
-.orderDelivery img{
-    position: absolute;
-    top: 0.5rem;
-    left: 13rem;
+.AboutSection{
+    grid-column: 1 / 5;
 }
+
+@media screen and (min-width: 768px) {
+    .AboutSectionGrid {
+        grid-template-columns: repeat(8, 1fr);
+        gap: 24px;
+    }
+
+    .AboutSection {
+        grid-column: 2 / 8;
+    }
+}
+
+/* Desktop screen */
+@media screen and (min-width: 1024px) {
+    .AboutSectionGrid{
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px;
+    }
+    .AboutSection {
+        grid-column: 3 / 11;
+    }
+}
+
+
+

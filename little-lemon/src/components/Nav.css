@@ -5,21 +5,24 @@ nav{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding-left: 30rem;
-    padding-right: 32rem;
 }
 
 
-img{
+nav img{
       margin: 0.4rem 0;
 }
 
-div a {
+nav a {
     padding: 1rem;
+    transition: all 0.3s ease 0s;
+}
+
+nav a:hover{
+    color: #F4CE14;
 }
 
 
-ul{
+nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +36,7 @@ ul{
     text-transform: capitalize;
 }
 
-a{
+nav a{
     text-decoration: none;
     color: #000;
     font-family: 'Karla', sans-serif;
@@ -42,4 +45,81 @@ a{
     font-weight: 700;
     line-height: normal;
     text-transform: capitalize;
+}
+
+.toggleButton{
+    display: none;
+}
+
+.NavUlDropdown{
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .NavUl{
+        display: none;
+    }
+
+    .LoginSignupWrapper{
+        display: none;
+    }
+
+    .toggleButton{
+        display: inline;
+        cursor: pointer;
+    }
+
+    .toggleButton img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .NavUlDropdown.show{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        color: #000;
+        font-family: 'Karla', sans-serif;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
+    .NavUlDropdown a{
+        text-decoration: none;
+        color: #000;
+        font-family: 'Karla', sans-serif;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+}
+
+    .NavUlDropdown li{
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-top: 1px solid black;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .NavUlDropdown a:hover{
+        color: #F4CE14;
+    }
+
+    .NavUlDropdown li:hover{
+        background-color: #495E57 ;;
+    }
+
 }

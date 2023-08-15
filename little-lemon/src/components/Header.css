@@ -1,16 +1,125 @@
-header{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    background-color: #495E57;
-    padding-left: 20rem;
-    padding-right: 20rem;
+.HeaderContentGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, minmax(min-content, auto));
+    gap: 16px;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
+
+.HeaderContent{
+    grid-column: 1/5;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*!End of grid layout styling for Mobile------------**/
+
+/*! Here the styling for each Section for Mobile starts ****/
+
+/*!Start of section styling for Mobile:*/
 
 .headerArticle{
     display: flex;
     flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+.headerArticle h1{
+    padding-top: 2rem;
+    width: 18rem;
+    color: #F4CE14;
+    font-family: 'Markazi Text', sans-serif;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0.8;
+}
+
+.headerArticle h2{
+    font-family: 'Markazi Text', sans-serif;
+    color: #FFF;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.headerArticle p{
+    width: 17.9375rem;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: 'Markazi Text', sans-serif;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.reserveTableButton{
+    width: 12.5rem;
+    height: 2.75rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    background: #F4CE14;
+    color: #000;
+    text-align: center;
+    font-family: 'Markazi Text', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.imageWrapper{
+    display:flex;
+    position: relative;
+    width: 20.0625rem;
+    height: 22.375rem;
+    margin-bottom: 2rem;
+    align-items: center;
     justify-content: center;
+    margin-top: 1rem;
+}
+
+.mediterranianSeaFoodPic{
+    position: relative;
+    width: 18rem;
+    height: 22.375rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    background: lightgray 50% / cover no-repeat;
+}
+
+@media screen and (min-width: 768px){
+  .HeaderContentGrid {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 24px;
+}
+.HeaderContent{
+    grid-column: 2/8;
+    align-items: center;
+    justify-content: center;
+}
+
+/*!End of grid layout styling for Tablet------------**/
+
+/*! Here the styling for each Section for Tablet starts ****/
+
+/*!Start of section styling for Tablet:*/
+
+.headerArticle{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 .headerArticle h1{
@@ -64,9 +173,14 @@ header{
 }
 
 .imageWrapper{
+    display: flex;
     position: relative;
     width: 20.0625rem;
     height: 22.375rem;
+    margin-bottom: 4rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
 }
 
 .mediterranianSeaFoodPic{
@@ -78,4 +192,189 @@ header{
     border-radius: 1rem;
     background: lightgray 50% / cover no-repeat;
 }
+}
 
+@media screen and (min-width:1024px) and (max-width:1138px) {
+
+    .HeaderContentGrid {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+  }
+
+  .HeaderContent{
+    display: flex;
+    grid-column: 3/11;
+    justify-content: center;
+    align-items: center;
+}
+.headerArticle{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.headerArticle h1{
+    padding-top: 2rem;
+    width: 18rem;
+    color: #F4CE14;
+    font-family: 'Markazi Text', sans-serif;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0.8;
+}
+
+.headerArticle h2{
+    font-family: 'Markazi Text', sans-serif;
+    color: #FFF;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.headerArticle p{
+    width: 17.9375rem;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: 'Markazi Text', sans-serif;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    margin-top: 30px;
+}
+
+.reserveTableButton{
+    width: 12.5rem;
+    height: 2.75rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    background: #F4CE14;
+    color: #000;
+    text-align: center;
+    font-family: 'Markazi Text', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.imageWrapper{
+    display: flex;
+    position: relative;
+    width: 20.0625rem;
+    height: 22.375rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.mediterranianSeaFoodPic{
+    position: relative;
+    width: 18rem;
+    height: 22.375rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    background: lightgray 50% / cover no-repeat;
+    top: 0rem;
+}
+}
+
+/* Desktop screen */
+@media screen and (min-width: 1139px) {
+  .HeaderContentGrid {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+  }
+
+  .HeaderContent{
+    display: flex;
+    grid-column: 3/11;
+    justify-content: space-between;
+}
+
+/*!End of grid layout styling for Desktop------------**/
+
+/*! Here the styling for each Section for Desktop starts ****/
+
+/*!Start of section styling for Desktop:*/
+
+.headerArticle{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: start;
+}
+
+.headerArticle h1{
+    padding-top: 2rem;
+    width: 18rem;
+    color: #F4CE14;
+    font-family: 'Markazi Text', sans-serif;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0.8;
+}
+
+.headerArticle h2{
+    font-family: 'Markazi Text', sans-serif;
+    color: #FFF;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.headerArticle p{
+    width: 17.9375rem;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: 'Markazi Text', sans-serif;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    margin-top: 30px;
+    text-align: start;
+}
+
+.reserveTableButton{
+    width: 12.5rem;
+    height: 2.75rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    background: #F4CE14;
+    color: #000;
+    text-align: center;
+    font-family: 'Markazi Text', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.imageWrapper{
+    position: relative;
+    width: 20.0625rem;
+    height: 22.375rem;
+}
+
+.mediterranianSeaFoodPic{
+    position: absolute;
+    width: 18rem;
+    height: 24.375rem;
+    top: 4rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    background: lightgray 50% / cover no-repeat;
+}
+}
