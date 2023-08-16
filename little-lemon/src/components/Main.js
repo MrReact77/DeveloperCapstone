@@ -68,12 +68,12 @@ export default function Main() {
             <div className="aboutImageWrapper">
               <img
                 className="RestaurantPic"
-                src={"RestaurantPic"}
+                src={RestaurantPic}
                 alt="Little Lemon Restaurant View"
               ></img>
               <img
                 className="OwnersPic"
-                src={"OwnersPic"}
+                src={OwnersPic}
                 alt="The Restaurant owners"
               ></img>
             </div>

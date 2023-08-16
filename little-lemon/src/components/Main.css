@@ -166,7 +166,6 @@ main {
         justify-content: space-between;
         flex-wrap: wrap;
         margin-bottom: 1rem;
-        margin-right: 1rem;
     }
 }
 
@@ -251,7 +250,92 @@ main {
     grid-column: 1 / 5;
 }
 
-@media screen and (min-width: 425px) {
+.aboutWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.aboutWrapper article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.aboutWrapper article p{
+   word-wrap: break-word;
+}
+
+.aboutWrapper h2{
+    color:  #F4CE14;
+    font-family: 'Markazi Text';
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0.8;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.aboutWrapper h3{
+    color: #333;
+    font-family: Markazi Text;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.8;
+    text-align: center;
+}
+
+.aboutImageWrapper{
+    position: relative;
+    width: 15rem;
+    height: 30rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    margin-left: 0;
+}
+
+.RestaurantPic{
+    width: 15rem;
+    height: 11.875rem;
+    flex-shrink: 0;
+    top: 11rem;
+    left: 7rem;
+    z-index: 1;
+    margin-bottom: 1rem;
+}
+
+.OwnersPic{
+    width:14.74769rem;
+    height: 10.5rem;
+    flex-shrink: 0;
+    left: 8rem;
+}
+
+.aboutWrapper p{
+    color: #000;
+    text-align: justify;
+    font-family: Karla;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 18.125rem;
+    height: 12.125rem;
+    flex-shrink: 0;
+    margin-top: 2rem;
+    word-wrap: break-word;
+}
+
+@media screen and (min-width: 575px) {
     .AboutSectionGrid {
         grid-template-columns: repeat(8, 1fr);
         gap: 24px;
@@ -260,10 +344,39 @@ main {
     .AboutSection {
         grid-column: 2 / 8;
     }
+
+    .aboutImageWrapper{
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.RestaurantPic{
+    width: 18rem;
+    height: 14.875rem;
+    flex-shrink: 0;
+    top: 11rem;
+    left: 7rem;
+    z-index: 1;
+    margin-bottom: 1rem;
+}
+
+.OwnersPic{
+    width:17.74769rem;
+    height: 13.5rem;
+    flex-shrink: 0;
+    left: 8rem;
+}
 }
 
 /* Desktop screen */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1475px) {
     .AboutSectionGrid{
         grid-template-columns: repeat(12, 1fr);
         gap: 32px;
@@ -273,6 +386,84 @@ main {
     .AboutSection {
         grid-column: 3 / 11;
     }
+
+    .aboutWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .aboutImageWrapper{
+        position: relative;
+        width: 30rem;
+        height: 20rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .RestaurantPic{
+        width: 24rem;
+        height: 16.875rem;
+        flex-shrink: 0;
+        position: absolute;
+        top: 13rem;
+        left: 3rem;
+        z-index: 1;
+    }
+
+    .OwnersPic{
+        width: 18.74769rem;
+        height: 12.5rem;
+        flex-shrink: 0;
+        position: absolute;
+        left: 10rem;
+        bottom: 16rem;
+    }
+
+    .aboutWrapper h2{
+    color: #F4CE14;
+    font-family: Markazi Text;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: start;
+}
+
+.aboutWrapper h3{
+    color: #333;
+    font-family: Markazi Text;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.8;
+    text-align: center;
+    text-align: start;
+}
+
+.aboutWrapper p{
+    color: #000;
+    text-align: justify;
+    font-family: Karla;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 23.125rem;
+    height: 20.125rem;
+    flex-shrink: 0;
+    flex-shrink: 0;
+    margin-top: 2rem;
+    word-wrap: break-word;
+}
+
+.aboutImageWrapper{
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
 }
 
 
