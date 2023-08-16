@@ -1,0 +1,40 @@
+.TestimonialElement{
+    width: 13rem;
+    height: 13rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 1rem;
+    background-color: #FFFFFF;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.TestimonialElement img{
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.reviewerWrapper{
+    display: flex;
+    align-items: center;
+}
+
+.reviewerWrapper p{
+    margin-left: 1rem;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.ReviewText{
+    font-family: 'Karla';
+    margin-top: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

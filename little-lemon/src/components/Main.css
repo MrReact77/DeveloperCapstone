@@ -51,15 +51,58 @@ main {
     grid-template-columns: repeat(4, 1fr); /* Start with 4 columns on mobile */
     grid-template-rows: repeat(1, minmax(min-content, auto));
     gap: 16px;
-    padding-left: 5rem;
-    padding-right: 5rem;
 }
 
 .SpecialsSection{
     grid-column: 1 / 5;
 }
 
-@media screen and (min-width: 768px) {
+.specialsHeadingWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    }
+
+.specialsHeadline{
+    color: #000;
+    font-family: 'Markazi Text';
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.orderMenuOnlineButton{
+    border: 1px solid #000;
+    border-radius: 0.3125rem;
+    background-color: #F4CE14;
+    width: 10.5rem;
+    height: 2.9375rem;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Markazi Text;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+}
+
+    .specialsContentWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        align-items: center;
+}
+
+@media screen and (min-width: 425px) {
     .SpecialsSectionGrid {
         grid-template-columns: repeat(8, 1fr);
         gap: 24px;
@@ -68,16 +111,62 @@ main {
     .SpecialsSection {
         grid-column: 2 / 8;
     }
+
+    .specialsHeadline{
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .specialsHeadingWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .specialsContentWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        align-items: center;
+}
+
 }
 
 /* Desktop screen */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1089px) {
     .SpecialsSectionGrid {
         grid-template-columns: repeat(12, 1fr);
         gap: 32px;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
     .SpecialsSection {
         grid-column: 3 / 11;
+    }
+
+    .specialsHeadingWrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .specialsHeadline{
+        font-size: 3rem;
+    }
+
+    .specialsContentWrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
     }
 }
 
@@ -86,15 +175,34 @@ main {
     grid-template-columns: repeat(4, 1fr); /* Start with 4 columns on mobile */
     grid-template-rows: repeat(1, minmax(min-content, auto));
     gap: 16px;
-    padding-left: 5rem;
-    padding-right: 5rem;
 }
 
 .TestimonialsSection{
     grid-column: 1 / 5;
 }
 
-@media screen and (min-width: 768px) {
+.TestimonialsSection h2{
+    color: #333;
+    font-family: 'Markazi Text';
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.reviewWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin: 1rem;
+}
+
+@media screen and (min-width: 425px) {
     .TestimonialsSectionGrid {
         grid-template-columns: repeat(8, 1fr);
         gap: 24px;
@@ -103,6 +211,10 @@ main {
     .TestimonialsSection {
         grid-column: 2 / 8;
     }
+
+    .TestimonialsSection h2{
+        font-size: 4rem;
+    }
 }
 
 /* Desktop screen */
@@ -110,10 +222,22 @@ main {
     .TestimonialsSectionGrid{
         grid-template-columns: repeat(12, 1fr);
         gap: 32px;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
     .TestimonialsSection {
         grid-column: 3 / 11;
     }
+
+    .reviewWrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 2rem;
+        margin-bottom: 5rem;
+        margin-top: 2rem;
+}
 }
 
 .AboutSectionGrid{
@@ -121,15 +245,13 @@ main {
     grid-template-columns: repeat(4, 1fr); /* Start with 4 columns on mobile */
     grid-template-rows: repeat(1, minmax(min-content, auto));
     gap: 16px;
-    padding-left: 5rem;
-    padding-right: 5rem;
 }
 
 .AboutSection{
     grid-column: 1 / 5;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
     .AboutSectionGrid {
         grid-template-columns: repeat(8, 1fr);
         gap: 24px;
@@ -145,6 +267,8 @@ main {
     .AboutSectionGrid{
         grid-template-columns: repeat(12, 1fr);
         gap: 32px;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
     .AboutSection {
         grid-column: 3 / 11;

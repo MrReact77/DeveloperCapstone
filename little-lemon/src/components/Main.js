@@ -3,11 +3,10 @@ import "./Main.css";
 import GreekSalad from "../assets/greek salad.jpg";
 import Bruchetta from "../assets/bruchetta.svg";
 import LemonDessert from "../assets/lemon dessert.jpg";
-import DeliveryIcon from "../assets/home icon.svg";
-import RatingIcon from "../assets/5 star icon.png";
-import CustomerIcon from "../assets/customer icon.png";
 import RestaurantPic from "../assets/restaurant.jpg";
 import OwnersPic from "../assets/Mario and Adrian b.jpg";
+import MenuItem from "../components/MenuItem";
+import Testimonial from "./Testimonial";
 
 export default function Main() {
   return (
@@ -19,59 +18,24 @@ export default function Main() {
             <button className="orderMenuOnlineButton">Online Menu</button>
           </div>
           <div className="specialsContentWrapper">
-            <article className="GreekSalad">
-              <img src={"GreekSalad"} alt="Greek salad"></img>
-              <section>
-                <div>
-                  <h3>Greed Salad</h3>
-                  <h4>$12,99</h4>
-                </div>
-                <p>
-                  The famous greek salad of crispy lettuce, peppers, olives and
-                  our Chicago style feta cheese, garnished with crunchy garlic
-                  and rosemary croutons.
-                </p>
-                <div className="orderDelivery">
-                  <p>Order a delivery</p>
-                  <img src={"DeliveryIcon"} alt="delivery_icon"></img>
-                </div>
-              </section>
-            </article>
-            <article className="Bruchetta">
-              <img src={"Bruchetta"} alt="Bruchetta"></img>
-              <section>
-                <div>
-                  <h3>Bruchetta</h3>
-                  <h4>$5,99</h4>
-                </div>
-                <p>
-                  Our Bruschetta is made from grilled bread that has been
-                  smeared with garlic and seasoned with salt and olive oil.
-                </p>
-                <div className="orderDelivery">
-                  <p>Order a delivery</p>
-                  <img src={"DeliveryIcon"} alt="delivery_icon"></img>
-                </div>
-              </section>
-            </article>
-            <article className="LemonDessert">
-              <img src={"LemonDessert"} alt="Lemon Dessert"></img>
-              <section>
-                <div>
-                  <h3>Lemon Dessert</h3>
-                  <h4>$5,00</h4>
-                </div>
-                <p>
-                  This comes straight from grandma’s recipe book, every last
-                  ingredient has been sourced and is as authentic as can be
-                  imagined.
-                </p>
-                <div className="orderDelivery">
-                  <p>Order a delivery</p>
-                  <img src={"DeliveryIcon"} alt="delivery_icon"></img>
-                </div>
-              </section>
-            </article>
+            <MenuItem
+              name="Greek salad"
+              price="12.99$"
+              image={GreekSalad}
+              description="The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."
+            />
+            <MenuItem
+              name="Bruchetta"
+              price="5.99$"
+              image={Bruchetta}
+              description="Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil."
+            />
+            <MenuItem
+              name="Lemon Dessert"
+              price="5.00$"
+              image={LemonDessert}
+              description="This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
+            />
           </div>
         </section>
       </div>
@@ -79,86 +43,10 @@ export default function Main() {
         <section className="TestimonialsSection">
           <h2>Testimonials</h2>
           <div className="reviewWrapper">
-            <article>
-              <img
-                className="ratingImage"
-                src={"RatingIcon"}
-                alt="rating_stars"
-              ></img>
-              <div className="reviewerWrapper">
-                <img
-                  className="customerImage"
-                  src={"CustomerIcon"}
-                  alt="Portrait of Reviewer"
-                ></img>
-                <p>Christian</p>
-              </div>
-              <p>"Review text"</p>
-            </article>
-            <article>
-              <img
-                className="ratingImage"
-                src={"RatingIcon"}
-                alt="rating_stars"
-              ></img>
-              <div className="reviewerWrapper">
-                <img
-                  className="customerImage"
-                  src={"CustomerIcon"}
-                  alt="Portrait of Reviewer"
-                ></img>
-                <p>Christian</p>
-              </div>
-              <p>"Great ambiente and food. Will definitely come back!"</p>
-            </article>
-            <article>
-              <img
-                className="ratingImage"
-                src={"RatingIcon"}
-                alt="rating_stars"
-              ></img>
-              <div className="reviewerWrapper">
-                <img
-                  className="customerImage"
-                  src={"CustomerIcon"}
-                  alt="Portrait of Reviewer"
-                ></img>
-                <p>Christian</p>
-              </div>
-              <p>"Very tasty"</p>
-            </article>
-            <article>
-              <img
-                className="ratingImage"
-                src={"RatingIcon"}
-                alt="rating_stars"
-              ></img>
-              <div className="reviewerWrapper">
-                <img
-                  className="customerImage"
-                  src={"CustomerIcon"}
-                  alt="Portrait of Reviewer"
-                ></img>
-                <p>Christian</p>
-              </div>
-              <p>"Great food. Will come back soon!"</p>
-            </article>
-            <article>
-              <img
-                className="ratingImage"
-                src={"RatingIcon"}
-                alt="rating_stars"
-              ></img>
-              <div className="reviewerWrapper">
-                <img
-                  className="customerImage"
-                  src={"CustomerIcon"}
-                  alt="Portrait of Reviewer"
-                ></img>
-                <p>Christian</p>
-              </div>
-              <p>"Amazing Restaurant"</p>
-            </article>
+            <Testimonial name="Julia" review="Very tasty food :)"/>
+            <Testimonial name="Markus" review="It was very good"/>
+            <Testimonial name="Abdallah" review="Will definetly come back"/>
+            <Testimonial name="Fatima" review="Best restaurant when it comes to fresh lemons ;)"/>
           </div>
         </section>
       </div>

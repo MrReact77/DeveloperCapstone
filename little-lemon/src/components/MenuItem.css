@@ -1,0 +1,86 @@
+.MenuItem{
+    width: 16.54169rem;
+    height: 27.4375rem;
+    flex-shrink: 0;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.MenuItem section{
+    background: #EDEFEE;
+    width: 16.54169rem;
+    height: 15.85888rem;
+    flex-shrink: 0;
+}
+
+.MenuItemImage{
+    width: 16.498rem;
+    height: 11rem;
+    flex-shrink: 0;
+    border-radius: 1rem 1rem 0rem 0rem;
+    background: lightgray 50% / cover no-repeat;
+    display: block;
+}
+
+.MenuItemHeadingWrapper{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+
+.MenuHeadingWrapper h3{
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    whitespace: nowrap;
+    font-family: 'Markazi Text';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%;
+}
+
+.MenuItemDescription{
+    color: #495E57;
+    font-family: 'Karla';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 1rem;
+    width: 13rem;
+    height: 7.51788rem;
+    flex-shrink: 0;
+    margin-left: 1.7rem;
+    margin-right: 2rem;
+}
+
+.orderDeliveryWrapper{
+    display: flex;
+}
+
+.orderDeliveryWrapper p{
+    color: #333;
+    font-family: Karla;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 8.92213rem;
+    height: 1.756rem;
+    flex-shrink: 0;
+    margin-left: 1.7rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+.MenuItem h4{
+    color: #EE9972;
+    font-family: 'Karla';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
