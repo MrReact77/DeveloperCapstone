@@ -1,41 +1,111 @@
 .TableReservationGrid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, minmax(min-content, auto));
+    grid-template-rows: repeat(2, minmax(min-content, auto));
     gap: 16px;
-    padding-left: 5rem;
-    padding-right: 5rem;
 }
 
-.TableReservationContent{
+.TableReservationHeadingRow, .TableReservationMainRowt{
     grid-column: 1/5;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
 }
+
+.TableReservationHeadingRow{
+    grid-row: 1/2;
+}
+
+.TableReservationMainRow{
+    grid-row: 2 /3;
+}
+
 
 @media screen and (min-width: 768px){
   .TableReservationGrid {
     grid-template-columns: repeat(8, 1fr);
     gap: 24px;
 }
-.TableReservationContent{
-    grid-column: 2/8;
-    align-items: center;
-    justify-content: center;
+.TableReservationHeadingRow, .TableReservationMainRow{
+    grid-column: 1/9;
 }
 }
 
 @media screen and (min-width: 1024px) {
   .TableReservationGrid {
-    grid-template-columns: repeat(12, 1fr);
-    gap: 32px;
-  }
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px;
+    }
 
-  .TableReservationContent{
-    display: flex;
-    grid-column: 3/11;
-    justify-content: space-between;
+  .TableReservationHeadingRow, .TableReservationMainRow{
+        grid-column: 1 / 13;
+    }
+}
+
+.TableReservationHeadingRow{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Start with 4 columns on mobile */
+    grid-template-rows: repeat(1, minmax(min-content, auto));
+    gap: 16px;
+    background-color: #495E57;
+}
+
+.TableReservationHeadingContent{
+    grid-column: 1/5;
+}
+
+@media screen and (min-width: 768px){
+  .TableReservationHeadingRow {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 24px;
+}
+.TableReservationHeadingContent{
+    grid-column: 2/8;
 }
 }
+
+@media screen and (min-width: 1024px) {
+  .TableReservationHeadingRow {
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+  .TableReservationHeadingContent{
+        grid-column: 3 / 11;
+    }
+}
+
+.TableReservationMainRow{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Start with 4 columns on mobile */
+    grid-template-rows: repeat(1, minmax(min-content, auto));
+    gap: 16px;
+}
+
+.TableReservationMainContent{
+    grid-column: 1/5;
+}
+
+@media screen and (min-width: 768px){
+  .TableReservationMainRow {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 24px;
+}
+    .TableReservationMainContent{
+        grid-column: 2/8;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .TableReservationMainRow {
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+  .TableReservationMainContent{
+        grid-column: 3 / 11;
+    }
+}
+
+
