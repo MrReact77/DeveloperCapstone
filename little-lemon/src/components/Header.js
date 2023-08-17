@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import restaurantfood from "../assets/restauranfood.jpg";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -14,7 +15,9 @@ export default function Header() {
               We are a family owned Mediterranean restaurant, focused on
               traditional recipes served with a modern twist.
             </p>
-            <button className="reserveTableButton">Reserve a table</button>
+            <Link to="/reservations">
+              <button className="reserveTableButton">Reserve a Table</button>
+            </Link>
           </article>
           <div className="imageWrapper">
             <img

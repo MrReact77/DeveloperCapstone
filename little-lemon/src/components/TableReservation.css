@@ -1,0 +1,41 @@
+.TableReservationGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, minmax(min-content, auto));
+    gap: 16px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.TableReservationContent{
+    grid-column: 1/5;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px){
+  .TableReservationGrid {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 24px;
+}
+.TableReservationContent{
+    grid-column: 2/8;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .TableReservationGrid {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+  }
+
+  .TableReservationContent{
+    display: flex;
+    grid-column: 3/11;
+    justify-content: space-between;
+}
+}

@@ -22,7 +22,7 @@
     grid-column: 1/5;
 }
 
-  Main{
+.Main{
   grid-column: 1 / 5;
 }
 
@@ -31,7 +31,7 @@ Header {
   background-color: #495E57;
 }
 
-Main {
+.Main {
   grid-row: 2 / 3;
 }
 
@@ -54,7 +54,7 @@ Footer {
   .FooterWrapper{
     grid-column: 1/9;
   }
-  Main{
+  .Main{
     grid-column: 1 / 9;
   }
 }
@@ -74,7 +74,7 @@ Footer {
     grid-column: 1/13;
   }
 
-   Main{
+   .Main{
     grid-column: 1 / 13;
   }
 }
