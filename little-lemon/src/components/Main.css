@@ -42,7 +42,7 @@ main {
         gap: 32px;
     }
     .SpecialsSectionGrid, .TestimonialsSectionGrid, .AboutSectionGrid {
-        grid-column: 1 / 13; /* Span all 12 columns on desktop */
+        grid-column: 1 / 13;
     }
 }
 
@@ -407,7 +407,7 @@ main {
         flex-shrink: 0;
         position: absolute;
         top: 13rem;
-        left: 3rem;
+        left: 2rem;
         z-index: 1;
     }
 
@@ -416,7 +416,7 @@ main {
         height: 12.5rem;
         flex-shrink: 0;
         position: absolute;
-        left: 10rem;
+        left: 9.5rem;
         bottom: 16rem;
     }
 

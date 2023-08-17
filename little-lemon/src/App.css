@@ -36,8 +36,6 @@ Main {
 }
 
 Footer {
-  display: flex;
-  justify-content: space-around;
   grid-row: 3 / 4;
   background-color: #D9D9D9;
 }
