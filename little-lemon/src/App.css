@@ -8,6 +8,7 @@
 }
 
 .wrapper {
+  margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, minmax(min-content, auto));
@@ -16,6 +17,7 @@
 
 .HeaderWrapper{
     grid-column: 1/5;
+    margin-top: 3rem;
 }
 
 .FooterWrapper{
@@ -49,6 +51,7 @@ Footer {
 
   .HeaderWrapper{
     grid-column: 1/9;
+    margin-top: 2rem;
   }
 
   .FooterWrapper{

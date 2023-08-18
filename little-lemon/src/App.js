@@ -9,17 +9,17 @@ import TableReservation from "./components/TableReservation";
 function App() {
   return (
     <>
-      <Nav />
+      <Nav className="nav"/>
       <div className="wrapper">
         <div className="HeaderWrapper">
           <Routes>
             <Route path="/" element={<Header />}></Route>
+            <Route path="/reservations" element={<TableReservation />} />
           </Routes>
         </div>
         <div className="Main">
           <Routes>
             <Route path="/" element={<Main />}></Route>
-            <Route path="/reservations" element={<TableReservation/>} />
           </Routes>
         </div>
         <div className="FooterWrapper">
