@@ -53,6 +53,27 @@ footer{
     color: #F4CE14;
 }
 
+.Contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ContactInfos{
+    word-wrap: break-word;
+    text-align: center;
+    width: 11rem;
+}
+
+.Copyright{
+    word-wrap: break-word;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: "Markazi Text";
+    font-size: 1.5rem;
+}
+
 @media screen and (min-width: 768px) {
     footer {
         grid-template-columns: repeat(8, 1fr);
@@ -77,6 +98,7 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .FooterLinksWrapper{
