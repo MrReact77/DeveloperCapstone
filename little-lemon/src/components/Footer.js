@@ -50,7 +50,7 @@ export default function Footer() {
             </div>
             <p className="Copyright">
               © Copyright 2023 This is a showcase web app made by Karim
-              El-Deyry. Don't clain as your own.
+              El-Deyry. Don't clain as your own. Test
             </p>
           </div>
         </div>
