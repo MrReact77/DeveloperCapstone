@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DeveloperCapstone/static/css/main.240aa38f.css",
-    "main.js": "/DeveloperCapstone/static/js/main.a2d990ba.js",
+    "main.js": "/DeveloperCapstone/static/js/main.eff1fbb3.js",
     "static/js/787.a2f6b77c.chunk.js": "/DeveloperCapstone/static/js/787.a2f6b77c.chunk.js",
     "static/media/Mario and Adrian b.jpg": "/DeveloperCapstone/static/media/Mario and Adrian b.6ba0e06bfa9c1ea75109.jpg",
     "static/media/bruchetta.svg": "/DeveloperCapstone/static/media/bruchetta.29ea078fea3d3120ed22402e901b5bbc.svg",
@@ -13,11 +13,11 @@
     "static/media/home icon.svg": "/DeveloperCapstone/static/media/home icon.fa875b8ebddfa88cc6c1d081b10fd720.svg",
     "index.html": "/DeveloperCapstone/index.html",
     "main.240aa38f.css.map": "/DeveloperCapstone/static/css/main.240aa38f.css.map",
-    "main.a2d990ba.js.map": "/DeveloperCapstone/static/js/main.a2d990ba.js.map",
+    "main.eff1fbb3.js.map": "/DeveloperCapstone/static/js/main.eff1fbb3.js.map",
     "787.a2f6b77c.chunk.js.map": "/DeveloperCapstone/static/js/787.a2f6b77c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.240aa38f.css",
-    "static/js/main.a2d990ba.js"
+    "static/js/main.eff1fbb3.js"
   ]
 }
