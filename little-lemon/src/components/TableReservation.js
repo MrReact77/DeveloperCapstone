@@ -17,6 +17,7 @@ export default function TableReservation() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setConfirmed(true);
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -31,7 +32,9 @@ export default function TableReservation() {
       <div className="TableReservationMainRow">
         <div className="TableReservationMainContent">
           {confirmed ? (
-            <h4 className="confirmedHeading">Your Reservation has been completed!</h4>
+            <h4 className="confirmedHeading">
+              Your Reservation has been completed!
+            </h4>
           ) : (
             <h2>Reserve a Table for any occasion</h2>
           )}
@@ -44,6 +47,12 @@ export default function TableReservation() {
                     <strong>{key}:</strong> {userData[key].toString()}
                   </div>
                 ))}
+              </div>
+              <div className="ConfirmationInfoTextWrapper">
+                <h4>
+                  We will shortly also send you a confirmation via email.
+                </h4>
+                <h4> {`We are happy to welcome you soon :)`}</h4>
               </div>
             </div>
           ) : (

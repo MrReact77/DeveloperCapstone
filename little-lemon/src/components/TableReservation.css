@@ -188,8 +188,10 @@
     height: 2rem;
     font-size: 1rem;
     margin-bottom: 1rem;
+    padding: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    border-radius: 1rem;
 }
 
 .reserveTableForm select{
@@ -198,6 +200,7 @@
     margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    border-radius: 1rem;
 }
 
 .confirmedHeading{
@@ -222,6 +225,18 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
+}
+
+.ConfirmationInfoTextWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.ConfirmationInfoTextWrapper h4{
+    color: #F4CE14;
+    font-family: "Karla";
 }
 @media screen and (min-width: 768px){
   .TableReservationMainRow {
