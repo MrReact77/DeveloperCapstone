@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DeveloperCapstone/static/css/main.3652e825.css",
-    "main.js": "/DeveloperCapstone/static/js/main.f54ac2c2.js",
+    "main.css": "/DeveloperCapstone/static/css/main.4ab5cdc8.css",
+    "main.js": "/DeveloperCapstone/static/js/main.e0c9afa2.js",
     "static/js/787.a2f6b77c.chunk.js": "/DeveloperCapstone/static/js/787.a2f6b77c.chunk.js",
     "static/media/greek salad.jpg": "/DeveloperCapstone/static/media/greek salad.bed423a1fab5b210e347.jpg",
     "static/media/Mario and Adrian b.jpg": "/DeveloperCapstone/static/media/Mario and Adrian b.cff76e69f4d1fbeb21f6.jpg",
@@ -12,12 +12,12 @@
     "static/media/Logo .svg": "/DeveloperCapstone/static/media/Logo .f72c913c48c5334f78f2c336ec36f22b.svg",
     "static/media/home icon.svg": "/DeveloperCapstone/static/media/home icon.fa875b8ebddfa88cc6c1d081b10fd720.svg",
     "index.html": "/DeveloperCapstone/index.html",
-    "main.3652e825.css.map": "/DeveloperCapstone/static/css/main.3652e825.css.map",
-    "main.f54ac2c2.js.map": "/DeveloperCapstone/static/js/main.f54ac2c2.js.map",
+    "main.4ab5cdc8.css.map": "/DeveloperCapstone/static/css/main.4ab5cdc8.css.map",
+    "main.e0c9afa2.js.map": "/DeveloperCapstone/static/js/main.e0c9afa2.js.map",
     "787.a2f6b77c.chunk.js.map": "/DeveloperCapstone/static/js/787.a2f6b77c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3652e825.css",
-    "static/js/main.f54ac2c2.js"
+    "static/css/main.4ab5cdc8.css",
+    "static/js/main.e0c9afa2.js"
   ]
 }
