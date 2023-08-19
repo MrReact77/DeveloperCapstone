@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/DeveloperCapstone/static/css/main.d946e467.css",
+    "main.css": "/DeveloperCapstone/static/css/main.3ca11921.css",
     "main.js": "/DeveloperCapstone/static/js/main.45173504.js",
     "static/js/787.a2f6b77c.chunk.js": "/DeveloperCapstone/static/js/787.a2f6b77c.chunk.js",
     "static/media/greek salad.jpg": "/DeveloperCapstone/static/media/greek salad.bed423a1fab5b210e347.jpg",
@@ -12,12 +12,12 @@
     "static/media/Logo .svg": "/DeveloperCapstone/static/media/Logo .f72c913c48c5334f78f2c336ec36f22b.svg",
     "static/media/home icon.svg": "/DeveloperCapstone/static/media/home icon.fa875b8ebddfa88cc6c1d081b10fd720.svg",
     "index.html": "/DeveloperCapstone/index.html",
-    "main.d946e467.css.map": "/DeveloperCapstone/static/css/main.d946e467.css.map",
+    "main.3ca11921.css.map": "/DeveloperCapstone/static/css/main.3ca11921.css.map",
     "main.45173504.js.map": "/DeveloperCapstone/static/js/main.45173504.js.map",
     "787.a2f6b77c.chunk.js.map": "/DeveloperCapstone/static/js/787.a2f6b77c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d946e467.css",
+    "static/css/main.3ca11921.css",
     "static/js/main.45173504.js"
   ]
 }
