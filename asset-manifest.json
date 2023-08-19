@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/DeveloperCapstone/static/css/main.3652e825.css",
-    "main.js": "/DeveloperCapstone/static/js/main.e6d50126.js",
+    "main.js": "/DeveloperCapstone/static/js/main.1b163e12.js",
     "static/js/787.a2f6b77c.chunk.js": "/DeveloperCapstone/static/js/787.a2f6b77c.chunk.js",
     "static/media/Mario and Adrian b.jpg": "/DeveloperCapstone/static/media/Mario and Adrian b.6ba0e06bfa9c1ea75109.jpg",
     "static/media/bruchetta.svg": "/DeveloperCapstone/static/media/bruchetta.29ea078fea3d3120ed22402e901b5bbc.svg",
     "static/media/greek salad.jpg": "/DeveloperCapstone/static/media/greek salad.bed423a1fab5b210e347.jpg",
-    "static/media/restauranfood.jpg": "/DeveloperCapstone/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
+    "static/media/restauranfood.jpg": "/DeveloperCapstone/static/media/restauranfood.21f9f70f8b83c3ac625a.jpg",
     "static/media/restaurant.jpg": "/DeveloperCapstone/static/media/restaurant.324d0f99bdf19400a0f7.jpg",
     "static/media/Logo.svg": "/DeveloperCapstone/static/media/Logo.6c132dfefa69396bba43f72aa595e62f.svg",
     "static/media/Logo .svg": "/DeveloperCapstone/static/media/Logo .f72c913c48c5334f78f2c336ec36f22b.svg",
     "static/media/home icon.svg": "/DeveloperCapstone/static/media/home icon.fa875b8ebddfa88cc6c1d081b10fd720.svg",
     "index.html": "/DeveloperCapstone/index.html",
     "main.3652e825.css.map": "/DeveloperCapstone/static/css/main.3652e825.css.map",
-    "main.e6d50126.js.map": "/DeveloperCapstone/static/js/main.e6d50126.js.map",
+    "main.1b163e12.js.map": "/DeveloperCapstone/static/js/main.1b163e12.js.map",
     "787.a2f6b77c.chunk.js.map": "/DeveloperCapstone/static/js/787.a2f6b77c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3652e825.css",
-    "static/js/main.e6d50126.js"
+    "static/js/main.1b163e12.js"
   ]
 }
