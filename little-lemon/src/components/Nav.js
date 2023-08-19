@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import "./Nav.css";
 import logo from '../assets/Logo.svg';
 import HamburgerButton from '../assets/Hamburger_icon.svg.png';
-import { Link } from "react-router-dom";
+import CloseIcon from "../assets/icons8-löschen-50.png"
+import { NavLink, Link } from "react-router-dom";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,50 +18,92 @@ export default function Nav() {
         <img src={logo} alt="logo" />
         <ul className={"NavUl"}>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/" exact>
+              Home
+            </NavLink>
           </li>
           <li>
-            <a href="/about">About</a>
+            <NavLink to="/about">
+              About
+            </NavLink>
           </li>
           <li>
-            <a href="/menu">Menu</a>
+            <NavLink to="/menu">
+              Menu
+            </NavLink>
           </li>
           <li>
-            <a href="/reservations">Reservations</a>
+            <NavLink to="/reservations">
+              Reservations
+            </NavLink>
           </li>
           <li>
-            <a href="/order-online">Order Online</a>
+            <NavLink to="/order-online">
+              Order Online
+            </NavLink>
           </li>
         </ul>
         <div className="LoginSignupWrapper">
-          <a href="/login">Login</a>
-          <a href="/signup">Sign up</a>
+          <NavLink to="/login">
+            Login
+          </NavLink>
+          <NavLink to="/signup">
+            Sign up
+          </NavLink>
         </div>
-        <a id="burgerButton" className="toggleButton" onClick={toggleDropdown}>
-          <img src={HamburgerButton} alt="burger_button_toggler" />
-        </a>
+        {isOpen ? (
+          <a
+            id="burgerButton"
+            className="toggleButton"
+            onClick={toggleDropdown}
+          >
+            <img src={CloseIcon} alt="burger_button_toggler" />
+          </a>
+        ) : (
+          <a
+            id="burgerButton"
+            className="toggleButton"
+            onClick={toggleDropdown}
+          >
+            <img src={HamburgerButton} alt="burger_button_toggler" />
+          </a>
+        )}
       </nav>
       <ul className={`NavUlDropdown ${isOpen ? "show" : ""}`}>
-        <li>
-          <Link to="/">Home</Link>
+        <li onClick={toggleDropdown}>
+          <NavLink to="/" exact>
+            Home
+          </NavLink>
         </li>
-        <li>
-          <a href="/about">About</a>
+        <li onClick={toggleDropdown}>
+          <NavLink to="/about">
+            About
+          </NavLink>
         </li>
-        <li>
-          <a href="/menu">Menu</a>
+        <li onClick={toggleDropdown}>
+          <NavLink to="/menu">
+            Menu
+          </NavLink>
         </li>
-        <li>
-          <a href="/reservations">Reservations</a>
+        <li onClick={toggleDropdown}>
+          <NavLink to="/reservations">
+            Reservations
+          </NavLink>
         </li>
-        <li>
-          <a href="/order-online">Order Online</a>
+        <li onClick={toggleDropdown}>
+          <NavLink to="/order-online">
+            Order Online
+          </NavLink>
         </li>
-        <li>
-          <a href="/login">Login</a>
+        <li onClick={toggleDropdown}>
+          <NavLink to="/login">
+            Login
+          </NavLink>
         </li>
-        <li>
-          <a href="/signup">Sign up</a>
+        <li onClick={toggleDropdown}>
+          <NavLink to="/signup">
+            Sign up
+          </NavLink>
         </li>
       </ul>
     </>

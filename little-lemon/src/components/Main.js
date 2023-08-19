@@ -1,7 +1,7 @@
 import React from "react";
 import "./Main.css";
 import GreekSalad from "../assets/greek salad.jpg";
-import Bruchetta from "../assets/bruchetta.svg";
+import Bruchetta from "../assets/bruchetta.jpg";
 import LemonDessert from "../assets/lemon dessert.jpg";
 import RestaurantPic from "../assets/restaurant.jpg";
 import OwnersPic from "../assets/Mario and Adrian b.jpg";

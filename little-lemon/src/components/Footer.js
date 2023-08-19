@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import Logo from "../assets/Logo .svg";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -11,24 +12,24 @@ export default function Footer() {
           <div className="FooterLinksWrapper">
             <div className="DoormatNavigation">
               <p>Little Lemon</p>
-              <a href="/">
+              <Link to="/">
                 <p>Home</p>
-              </a>
-              <a href="/about">
+              </Link>
+              <Link to="/about">
                 <p>About</p>
-              </a>
-              <a href="/menu">
+              </Link>
+              <Link to="/menu">
                 <p>menu</p>
-              </a>
-              <a href="/reservations">
+              </Link>
+              <Link to="/reservations">
                 <p>Reservations</p>
-              </a>
-              <a href="/order-online">
+              </Link>
+              <Link to="/order-online">
                 <p>Order Online</p>
-              </a>
-              <a href="/login">
+              </Link>
+              <Link to="/login">
                 <p>Login</p>
-              </a>
+              </Link>
             </div>
             <div className="Contact">
               <p>Contact</p>
@@ -50,7 +51,7 @@ export default function Footer() {
             </div>
             <p className="Copyright">
               © Copyright 2023 This is a showcase web app made by Karim
-              El-Deyry. Don't clain as your own. Test
+              El-Deyry. Don't clain as your own.
             </p>
           </div>
         </div>

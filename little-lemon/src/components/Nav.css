@@ -46,7 +46,7 @@ nav a{
     text-decoration: none;
     color: #000;
     font-family: 'Karla', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -60,6 +60,12 @@ nav a{
 .NavUlDropdown{
     display: none;
 }
+
+nav a.active {
+    font-weight: bold;
+    color: #F4CE14;
+}
+
 
 @media (max-width: 900px) {
     .NavUl{
@@ -94,20 +100,25 @@ nav a{
         font-weight: 700;
         line-height: normal;
         text-transform: capitalize;
-        margin-top: 10rem;
+        margin-top: 4em;
+        position: fixed;
+        z-index: 1000;
+        background-color: #ffffff;
     }
 
     .NavUlDropdown a{
         text-decoration: none;
         color: #000;
         font-family: 'Karla', sans-serif;
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         text-transform: capitalize;
         margin-top: 1rem;
         margin-bottom: 1rem;
+        width: 100%;
+        text-align: center;
 }
 
     .NavUlDropdown li{
@@ -128,5 +139,11 @@ nav a{
     .NavUlDropdown li:hover{
         background-color: #495E57 ;;
     }
+
+    .NavUlDropdown a.active {
+        font-weight: bold;
+        color: #F4CE14;
+    }
+
 
 }

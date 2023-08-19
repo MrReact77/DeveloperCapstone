@@ -21,6 +21,7 @@ export default function Header() {
           </article>
           <div className="imageWrapper">
             <img
+              loading="lazy"
               src={restaurantfood}
               className="mediterranianSeaFoodPic"
               alt="Presentation of mediterrainian Sea food on a plate"

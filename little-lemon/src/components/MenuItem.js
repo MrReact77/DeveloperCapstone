@@ -5,7 +5,7 @@ import DeliveryIcon from "../assets/home icon.svg";
 export default function MenuItem(props) {
   return (
     <article className="MenuItem">
-      <img className="MenuItemImage" src={props.image} alt={props.name}></img>
+      <img loading="lazy" className="MenuItemImage" src={props.image} alt={props.name}></img>
       <section>
         <div className="MenuItemHeadingWrapper">
           <h3>{props.name}</h3>
