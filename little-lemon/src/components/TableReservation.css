@@ -191,7 +191,7 @@
     padding: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 .reserveTableForm select{
@@ -200,7 +200,7 @@
     margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 .confirmedHeading{
@@ -225,6 +225,7 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
+    justify-content: center;
 }
 
 .ConfirmationInfoTextWrapper{
@@ -232,11 +233,17 @@
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
+    word-wrap: break-word;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-wrap: wrap;
 }
 
 .ConfirmationInfoTextWrapper h4{
     color: #F4CE14;
     font-family: "Karla";
+    text-align: center;
+    word-wrap: break-word;
 }
 @media screen and (min-width: 768px){
   .TableReservationMainRow {
