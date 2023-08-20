@@ -56,6 +56,7 @@ export default function Nav() {
             id="burgerButton"
             className="toggleButton"
             onClick={toggleDropdown}
+            aria-label='Close Dropdown Menu'
           >
             <img src={CloseIcon} alt="burger_button_toggler" />
           </a>
@@ -63,7 +64,8 @@ export default function Nav() {
           <a
             id="burgerButton"
             className="toggleButton"
-            onClick={toggleDropdown}
+              onClick={toggleDropdown}
+              aria-label='Open Dropdown Menu'
           >
             <img src={HamburgerButton} alt="burger_button_toggler" />
           </a>
