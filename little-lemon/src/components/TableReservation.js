@@ -21,7 +21,7 @@ export default function TableReservation() {
   };
 
   return (
-    <div className="TableReservationGrid">
+    <div className="TableReservationGrid" data-testid="TableReservationGrid">
       <div className="TableReservationHeadingRow">
         <div className="TableReservationHeadingContent">
           <h2>Little Lemon</h2>

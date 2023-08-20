@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <header>
-      <div className="HeaderContentGrid">
+      <div className="HeaderContentGrid" data-testid="HeaderContentGrid">
         <div className="HeaderContent">
           <article className="headerArticle">
             <h1>Little Lemon</h1>
@@ -16,7 +16,7 @@ export default function Header() {
               traditional recipes served with a modern twist.
             </p>
             <Link to="/reservations">
-              <button className="reserveTableButton">Reserve a Table</button>
+              <button className="reserveTableButton" data-testid="reserveTableButton">Reserve a Table</button>
             </Link>
           </article>
           <div className="imageWrapper">

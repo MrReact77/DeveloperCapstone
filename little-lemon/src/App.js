@@ -20,13 +20,10 @@ function App() {
     <>
       <Nav className="nav" />
       <div className="wrapper">
-        <div className="HeaderWrapper">
+        <div className="HeaderWrapper" data-testid="HeadingWrapper">
           <Routes>
             <Route path="/" element={<Header />}></Route>
-            <Route
-              path="/reservations"
-              element={<TableReservation />}
-            />
+            <Route path="/reservations" element={<TableReservation />} />
           </Routes>
         </div>
         <div className="Main">
